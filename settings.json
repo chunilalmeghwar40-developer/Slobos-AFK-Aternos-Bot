@@ -1,48 +1,87 @@
 {
+  "name": "AFK Bot",
   "bot-account": {
-    "username": "Notsh_45",
+    "username": "Slobot00",
     "password": "",
-    "type": "mojang"
+    "type": "offline"
   },
-
   "server": {
     "ip": "SkGaming32_.aternos.me",
     "port": 12000,
-    "version": "1.12.1"
+    "version": "",
+    "try-creative": false
   },
-  
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
-    "y": 0,
+    "y": 100,
     "z": 0
   },
-
   "utils": {
     "auto-auth": {
-      "enabled": false,
-      "password": ""
+      "enabled": true,
+      "password": "chalol78"
     },
-
     "anti-afk": {
       "enabled": true,
       "sneak": true
     },
-
     "chat-messages": {
-      "enabled": false,
+      "enabled": true,
       "repeat": true,
-      "repeat-delay": 60,
-
+      "repeat-delay": 120,
       "messages": [
         "I'm a regular player",
-        "My owner is Lamgerr",
-        "I want be alone"
+        "Subscribe to Slobos!",
+        "I like to play Minecraft!"
       ]
     },
-
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-recconect-delay": 5000
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
+  },
+  "movement": {
+    "enabled": true,
+    "circle-walk": {
+      "enabled": true,
+      "radius": 4,
+      "speed": 3000
+    },
+    "look-around": {
+      "enabled": true,
+      "interval": 5000
+    },
+    "random-jump": {
+      "enabled": true,
+      "interval": 10000
+    }
+  },
+  "modules": {
+    "avoidMobs": true,
+    "combat": true,
+    "beds": false,
+    "chat": true,
+    "console-commands": true
+  },
+  "combat": {
+    "attack-mobs": true,
+    "auto-eat": true
+  },
+  "beds": {
+    "pick-up-day": false,
+    "place-night": false
+  },
+  "discord": {
+    "enabled": false,
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "events": {
+      "connect": true,
+      "disconnect": true,
+      "chat": false
+    }
+  },
+  "chat": {
+    "respond": true
   }
-}      
+}
